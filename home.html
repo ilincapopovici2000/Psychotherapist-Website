@@ -1,18 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ro">
 	<head>
 		<meta chaset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link href='style_home.css' rel='stylesheet' type='text/css'>
-		<link href="https://fontawesome.com/search?q=phone&o=r" rel="stylesheet">
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <meta name="description" content="Brief but informative description of your website (160 characters max).">
+        <meta name="keywords" content="psiholog, psihoterapie, psihoterapeut, cognitiv-comportamental, sedinte, anxietate, depresie, tulburari, probleme, cuplu, dependente, terapie, terapie de cuplu, terapie de familie, cariera">
+        <meta name="author" content="Popovici Antonia">
+		<link href='style_website.css' rel='stylesheet' type='text/css'>
+        <link href="https://fontawesome.com/search?q=phone&o=r" rel="stylesheet"> 
         <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css">
-        <script src="home_events.js"></script>    
+        <script src="website_events.js"></script>    
         
 		<title>Psihoterapeut - Popovici Antonia</title>
 	</head>
@@ -92,8 +91,8 @@
         </section>
 
         <section class="services" id="services">
+            <h2 class="heading">Servicii</h2>
             <div class="services-box">
-                <h2 class="heading">Servicii</h2>
                 <div class="wrapper-service">
                   <div class="service-item">
                     <i class="iconoir-user"></i>
@@ -104,7 +103,7 @@
                         <br>
                         Sesiunile de terapie au, în general, o durată standard de 50-60 de minute și pot avea loc săptămânal, bi-săptămânal sau la intervale mai mari, în funcție de nevoile clientului și de planul stabilit împreună cu terapeutul.
                     </div>
-                    <button class="btn" onclick="displayTextService(this)">Află mai multe</button>
+                    <button class="btn-service" onclick="displayTextService(this)">Află mai multe</button>
                   </div>
                   <div class="service-item">
                     <i class="iconoir-heart-solid"></i>
@@ -115,7 +114,7 @@
                         <br>
                         Cuplurile sunt încurajate să discute despre problemele întâmpinate, fie că este vorba despre neînțelegeri, infidelitate, probleme financiare, diferențe în stilurile de viață sau altele. Terapeutul ajută la facilitarea acestor discuții într-un mod constructiv.
                     </div>
-                    <button class="btn" onclick="displayTextService(this)">Află mai multe</button>
+                    <button class="btn-service" onclick="displayTextService(this)">Află mai multe</button>
                   </div>
                   <div class="service-item">
                     <i class="iconoir-community"></i>
@@ -126,7 +125,7 @@
                         <br>
                         Scopul principal al terapiei de familie este de a îmbunătăți comunicarea, de a rezolva conflictele și de a întări relațiile între membrii familiei.
                     </div>
-                    <button class="btn" onclick="displayTextService(this)">Află mai multe</button>
+                    <button class="btn-service" onclick="displayTextService(this)">Află mai multe</button>
                   </div>
                   <div class="service-item">
                     <i class="iconoir-graduation-cap-solid"></i>
@@ -137,7 +136,7 @@
                         <br>
                         Consilierea în carieră poate oferi, de asemenea, sprijin emoțional pentru a ajuta clienții să facă față anxietății legate de schimbările de carieră sau de căutarea unui loc de muncă.
                     </div>
-                    <button class="btn" onclick="displayTextService(this)">Află mai multe</button>
+                    <button class="btn-service" onclick="displayTextService(this)">Află mai multe</button>
                   </div>
                 </div>
             </div>
@@ -192,7 +191,7 @@
                         <br>
                         Abuzul în relații este o problemă complexă care necesită o atenție deosebită din partea societății. Este esențial ca victimele să recunoască semnele abuzului și să caute ajutor. De asemenea, educarea comunității despre diferitele forme de abuz și promovarea relațiilor sănătoase sunt pași cruciali în prevenirea și combaterea acestei probleme. 
                     </div>
-                    <button class="btn" onclick="displayTextArticle(this)">Află mai multe</button>
+                    <button class="btn-article" onclick="displayTextArticle(this)">Află mai multe</button>
                   </div>
                   <div class="article-item">
                     <i class="iconoir-favourite-book"></i>
@@ -241,7 +240,7 @@
                         Stabilirea limitelor sănătoase este esențială pentru o relație de cuplu fericită și sănătoasă. Acestea nu doar că protejează individualitatea fiecărui partener, dar contribuie și la construirea unei relații bazate pe respect și încredere. Prin comunicare deschisă, respect și auto-reflecție, partenerii pot construi o temelie solidă pentru o relație de succes.
 
                     </div>
-                    <button class="btn" onclick="displayTextArticle(this)">Află mai multe</button>
+                    <button class="btn-article" onclick="displayTextArticle(this)">Află mai multe</button>
                   </div>
                 </div>
             </div>
@@ -255,39 +254,19 @@
                 <a href="https://www.tiktok.com/@psiholog.antoniapopovici" class="iconoir-tiktok"></a>
                 <a href="https://www.linkedin.com/in/antonia-popovici-5242b4212/" class="iconoir-linkedin"></a>
             </div>
-            <!-- <div class="contact-box">
-                <h2 >Contactează-mă <i class="iconoir-mail"></i></h2>
-                
-    
-                <form>
-                    <input type="text" class="input-field" placeholder="Name*">
-                    <input type="email" class="input-field" placeholder="Email*">
-                    <input type="text" class="input-field" placeholder="Subject*">
-                    <textarea class="input-field textarea-field" placeholder="Message*"> </textarea>
-                    <button type="button" class="btn"> Send Message</button>
-                    
-                </form>
-            </div> -->
             <!-- Calendly inline widget begin -->
-            <div class="calendly-inline-widget" data-url="https://calendly.com/ilincapopovici20/30min" style="min-width:320px;height:700px;"></div>
+            <div class="calendly-inline-widget" data-url="https://calendly.com/ilincapopovici20/30min"></div>
             <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
             <!-- Calendly inline widget end -->
-            <button type="button" class="schedule"> Vreau sa ma programez</button>
-            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d683.4398469935666!2d23.57970413417474!3d46.74992625489785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47490dd9e103ae2d%3A0x7a7adc68979839da!2sStrada%20George%20Bacovia%2022%2C%20Cluj-Napoca%20400347!5e0!3m2!1sen!2sro!4v1726411269242!5m2!1sen!2sro" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
         </section>
 
 		
 		<!-- footer -->
 		<footer>
 			<div class="footer">
-				&copy; Ilinca Popovici- last update: 30.12.2024
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d683.4398469935666!2d23.57970413417474!3d46.74992625489785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47490dd9e103ae2d%3A0x7a7adc68979839da!2sStrada%20George%20Bacovia%2022%2C%20Cluj-Napoca%20400347!5e0!3m2!1sen!2sro!4v1726411269242!5m2!1sen!2sro" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				&copy; Ilinca Popovici- last update: 03.02.2025
 			</div>
 		</footer>
-
-	</div>
-
-
 	</body>
-
 </html>

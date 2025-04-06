@@ -8,9 +8,17 @@ body {
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: 100% 100%;
-	font-family:cursive;
-	font-style:normal;
+	font-family: "Rasa", serif;
+  	font-optical-sizing: auto;
+  	font-weight: 400;
+  	font-style: normal;
 }
+.vollkorn-class {
+	font-family: "Vollkorn", serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+  }
 
 .navbar {
 	position: fixed;
@@ -23,7 +31,9 @@ body {
 	background: rgb(246, 245, 243);
 	box-shadow: 0 4px 12px rgb(134, 134, 134);
 	color: rgb(105, 134, 114);
-	font-family:cursive;
+	font-family: "Rasa", serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
 	font-style: normal;
 	z-index: 1;
 }
@@ -48,6 +58,7 @@ body {
     flex: 1;
 	justify-content:center;
     text-align: left;
+	font-size: 18px;
 }
 
 .nav-link:hover {
@@ -59,10 +70,12 @@ body {
 
 .heading{
 	text-align: center;
-	font-family:cursive;
-	font-style: normal;
+	font-family: "Rasa", serif;
+  	font-weight: 600;
+  	font-style: normal;
 	padding-top: 110px;
 	padding-bottom: 60px;
+	font-size: 32px;
 }
 
 .nav-link {
@@ -83,7 +96,7 @@ body {
 a{
 	text-decoration: none;
 	color: currentColor;
-	font-size: 23px;
+	font-size: 26px;
 	padding-top: 5px;
 	padding-bottom: 5px;
 }
@@ -98,9 +111,11 @@ a{
 }
 
 .title{
-	font-family:cursive;
+	font-family: "Rasa", serif;
+	font-optical-sizing: auto;
+	font-weight: 600;
 	font-style: normal;
-	font-size: 24px;
+	font-size: 28px;
 }
 
 .home {
@@ -158,7 +173,7 @@ a{
     align-items: center;
     text-align: center;
     margin: 0 auto;
-    padding: 0.5rem;
+    padding: 1rem;
     max-width: 85%;
 	height: 10%;
 	border-radius: 18rem;
@@ -173,9 +188,11 @@ a{
 	padding-left: 100px;
 	padding-right: 100px;
 	margin-bottom: 30px;
-	font-family:cursive;
-	font-style:normal;
-	font-size: 23px;
+	font-family: "Rasa", serif;
+  	font-optical-sizing: auto;
+  	font-weight: 400;
+  	font-style: normal;
+	font-size: 24px;
 }
 
 /*services section*/
@@ -183,9 +200,6 @@ a{
 .services{
 	width: 100%; 
     min-height: 100vh; 
-}
-
-.services-box{
 	background-size: cover;
 	display: flex;
 	align-items: center;
@@ -193,29 +207,30 @@ a{
 	flex-direction: column;
 }
 
-
-.services-box i{
-	align-items: center;
-	justify-content: center;
-	border-radius: 50%;
-	font-size: 40px;
-}
-
-.wrapper-service{
+.services-box{
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	gap: 0.1rem;
 	padding-bottom: 100px;
 }
 
+
+.services-box i{
+	margin-top: -150px;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	font-size: 40px;
+}
+
 .service-item{
-	height: 620px;
-	width: 420px;
+	height: 690px;
+	width: 450px;
 	background-image: url('frame.png');
     background-size: cover; 
     background-position: center; 
 	border-radius: 2rem;
-	margin: 0 1.5rem;
+	margin: 0 0.5rem;
 	cursor: pointer;
 	display: flex;
 	flex-direction: column;
@@ -235,23 +250,25 @@ a{
 
 .description-service {
 	display: none;
-	font-size: 17px;
+	font-size: 22px;
 	height: 270px;
-	font-family:cursive;
+	font-family: "Rasa", serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
 	font-style: normal;
 	text-align: left;
-	padding-left: 40px;
+	padding-left: 35px;
 	padding-right: 30px;
 }
-
+  
 /*articles section*/
 
 .articles{
 	background-color: #f0f0f0;
 	width: 100%; 
     min-height: 100vh; 
+	transition: all 0.5s ease;
 }
-
 
 .articles-box i{
 	align-items: center;
@@ -260,7 +277,7 @@ a{
 	font-size: 40px;
 }
 
-.wrapper-article{
+.articles-box{
 	display: flex;
 	gap: 0.5rem;
 	justify-content: center;
@@ -268,15 +285,14 @@ a{
 }
 
 .article-item{
-	height: 620px;
-	width: 750px;
+	height: 600px;
+	width: 740px;
 	background-image: url('articles.png'); 
     background-size: cover; 
     background-position: center;
 	border-radius: 2rem;
 	margin: 0 1.5rem;
 	padding: 90px 30px;
-	cursor: pointer;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -284,47 +300,42 @@ a{
 	justify-content: center;
 	gap: 2rem;
 	color: rgb(246, 245, 243);
-	transition: 0.4s ease-in-out;
-  	overflow: hidden;
 }
 
-.article-item:hover{
-	border: 3px solid rgb(105, 134, 114);
-	transform: translateY(-10px)scale(1.03);
-	box-shadow: 0 0 50px rgb(105, 134, 114);
-}
 
 .description-article {
-	padding-bottom: 30px;
+	padding-bottom: 10px;
 	display: none;
-	font-size: 17px;
-	height: 1580px;
-	font-family:cursive;
-	font-style: normal;
+	font-size: 24px;
+	font-family: "Rasa", serif;
+  	font-optical-sizing: auto;
+  	font-weight: 400;
+  	font-style: normal;
 	text-align: left;
 	align-items: baseline;
+	padding-left: 100px;
+	padding-right: 80px;
+}
+
+.show-other {
+    display: none; 
+    color: white;
+    border: none; 
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.expanded {
+	position: relative;
+    width: 95%;
+	height: 85%;
+}
+
+.hidden {
+    display: none;
 }
 
 /*contact section*/
-
-.schedule {
-	display: block;
-	text-align: center;
-	margin: 40px auto 40px auto;
-	font-family:cursive;
-	font-style: normal;
-	font-size: 23px;
-}
-
-.calendar{
-	position: relative;
-    background-color: rgb(246, 245, 243);
-    box-shadow: 0 0 20px 0 #999;
-    margin-left: 970px;
-	margin-top: 300px;
-    transform: translate(-50%,-50%);
-    border-radius: 2rem;
-}
 
 .contact{
 	background-image: url('contact.png'); 
@@ -335,21 +346,23 @@ a{
     height: 100vh; 
 }
 
-.btn, .btn-service, .btn-article {
+.btn, .btn-service, .read-more, .show-other {
     border-radius: 2rem;
     color:rgb(105, 134, 114);
     padding: 10px;
-    font-size: 16px;
+    font-size: 18px;
 	font-weight: 100;
     border: none;
     cursor:pointer;
-	font-family:cursive;
+	font-family: "Rasa", serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
 	font-style: normal;
 	margin-bottom: -10px;
 	border: 2px solid rgb(105, 134, 114);
 }
 
-.btn:hover, .btn-service:hover, .btn-article:hover{
+.btn:hover, .btn-service:hover, .read-more:hover, .show-other:hover{
 	color: #fff;
 	border-radius: 2rem;
 	background: rgb(105, 134, 114);
@@ -363,6 +376,7 @@ a{
 }
 
 .map{
+	margin-top: -40px;
 	width: 100%;
 	height: 500px;
 }
@@ -385,14 +399,14 @@ img {
 
 @media only screen and (max-width: 1850px) {
 
-	body{
-		font-family:cursive;
-		font-style:normal;
-	}
-	.wrapper-service{
+	.services-box{
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		gap: 3rem;
+	}
+
+	.meDesc {
+		border-radius: 8rem;
 	}
 }
 
@@ -413,6 +427,16 @@ img {
 
 	.map{
 		padding-top: 200px;
+	}
+
+	.meDesc p{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	.description-article{
+		padding-left: 50px;
+		padding-right: 40px;
 	}
 
 }
@@ -447,10 +471,25 @@ img {
         text-align: center;
     }
 
+
+	.description-article{
+		padding-left: 30px;
+		padding-right: 20px;
+	}
+
+}
+
+
+@media only screen and (max-width: 1200px) {
+	.description-article{
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	
 }
 
 @media only screen and (max-width: 1000px) {
-	.wrapper-service{
+	.services-box{
 		display: grid;
 		grid-template-columns: repeat(1, 1fr);
 		gap: 3rem;
@@ -469,6 +508,15 @@ img {
         padding-top: 6rem;
         font-size: 45px;
     }
+
+	.articles-box{
+		gap: 3rem;
+		flex-direction: column;
+	}
+
+	.article-item{
+		width: 88%;
+	}
 
     .picture {
         justify-content: center;
@@ -493,48 +541,31 @@ img {
 	}
 
 	.meDesc p{
-		font-size: 17px;
-		padding-left: 15px;
-		padding-right: 15px;
+		font-size: 18px;
+		padding-left: 3px;
+		padding-right: 3px;
 	}
 
 	.meDesc {
-		border-radius: 8rem;
+		border-radius: 5rem;
 	}
 	
 	.service-item{
-		padding-top: 50px;
-		height: 730px;
+		padding-top: 180px;
+		height: 700px;
 		width: 330px;
 		justify-content:start;
+		font-size: 18px;
 	}
+
 
 	.description-service{
 		display: block;
+		font-size: 18px;
 	}
 
 	.btn-service{
 		display: none;
-	}
-
-	.btn-article{
-		display: none;
-	}
-
-	.description-article{
-		display: block;
-	}
-
-	.article-item{
-		padding-top: 50px;
-		width: 370px;
-		height: 3750px;
-		justify-content:start;
-		pointer-events: none;
-	}
-
-	.wrapper-article{
-		padding-top: 20px;
 	}
 
 	.calendly-inline-widget{
@@ -545,7 +576,11 @@ img {
 		padding-top: 260px;
 		height: 900px;
 	}
+
+	.description-article{
+		padding-left: 1px;
+		padding-right: 1px;
+		font-size: 18px;
+	}
 }
-
-
 
